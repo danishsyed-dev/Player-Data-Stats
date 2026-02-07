@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# Data and Artifacts
+extracted_data/
+mlruns/
+*.zip
+*.csv
+!players_data-2024_2025.csv
+!players_data_light-2024_2025.csv
+# Keep specific CSVs if they are part of the base repo, but ignore generated ones.
+# Actually, ignoring all zip and csv might be risky if the user wants to keep the players data.
+# The user likely wants to keep the players data CSVs since they are explicitly in the root.
+# So I will not ignore *.csv globally, but maybe in specific folders.
+# data/archive.zip should probably be ignored if it's large, but the user might need it.
+# The user has archive.zip (1.2MB). I'll ignore extracted_data/ and mlruns/.
+
+# Mac
+.DS_Store
+__MACOSX/
+
+# ZenML
+.zen/
