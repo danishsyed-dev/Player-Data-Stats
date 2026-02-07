@@ -1,33 +1,35 @@
-# Data Stats & ML Projects
+# Data Stats & Player Analysis
 
-This repository contains data analysis and machine learning projects.
+This repository contains data analysis and visualization of football player statistics.
 
-## Projects
+## Project Overview
 
-### 1. Data Cleaning & Analysis
-- **File**: `DataCleaning.ipynb`
-- **Description**: Jupyter Notebook for analyzing and visualization of player statistics data (`players_data-2024_2025.csv`).
-
-### 2. Prices Predictor System
-- **Folder**: `prices-predictor-system/`
-- **Description**: An end-to-end Machine Learning pipeline for price prediction using ZenML, MLflow, and Scikit-learn.
-- **Features**: Data ingestion, cleaning, feature engineering, model training, evaluation, and continuous deployment.
-- **Documentation**: See `prices-predictor-system/README.md` for detailed instructions.
+- **Dataset**: `players_data-2024_2025.csv` - Contains comprehensive statistics for football players for the 2024-2025 season.
+- **Analysis**: `DataCleaning.ipynb` - Jupyter Notebook for data cleaning, analysis, and visualization of the player statistics.
 
 ## Setup
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/danishsyed-dev/Player-Data-Stats.git
    ```
 
-2. Create a virtual environment (recommended):
+2. **Create a virtual environment** (recommended):
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies for the specific project you are working on.
+3. **Install dependencies**:
+   Ensure you have Jupyter Notebook and Pandas installed.
+   ```bash
+   pip install notebook pandas matplotlib seaborn
+   ```
+
+4. **Run the Notebook**:
+   ```bash
+   jupyter notebook DataCleaning.ipynb
+   ```
 
 ## License
 
